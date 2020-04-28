@@ -12,7 +12,7 @@
 
 <body>
   <header><center>Teams</center></header>
-  
+
   <div class="topnav">
   <a class="active" href="teams.html">Teams</a>
   <a href="matches.html">Matches</a>
@@ -22,50 +22,41 @@
 </div>
     <!-- HTML5 article tag for content -->
     <div id="content">
-   
+
+<h2>BLRS</h2>
+<ul>
+<li>2nd (2W, 1L)</li>
+<li>(2W, 1L)</li>
+<li>135 pts</li>
+<li>(65 PS, 70 DS)</li>
+</ul>
+
+<h2>NJIT</h2>
+<ul>
+<li>3rd</li>
+<li>(1W, 2L)</li>
+<li>135 pts</li>
+<li>(65 PS, 70 DS)</li>
+</ul>
+
+<h2>SKAR</h2>
+<ul>
+<li>4th</li>
+<li>(0W, 3L)</li>
+<li>5 pts</li>
+<li>(0 PS, 5 DS)</li>
+</ul>
+
+<h2>WPI</h2>
+<ul>
+<li>1st</li>
+<li>(3W, 0L)</li>
+<li>140 pts</li>
+<li>(70 PS, 70 DS)</li>
+</ul>
     
 
-    <button class="accordion">BLRS</button>
-<div class="panel">
-  <p>2nd (2W, 1L) 135 pts (65 PS, 70 DS)</p>
- <!-- <a href="BLRS.html" >Go To</a>-->
-</div>
 
-<button class="accordion">NJIT</button>
-<div class="panel">
-  <p>3rd (1W, 2L) 105 pts(65 PS, 40 DS)</p>
- <!-- <a href="NJIT.html">Go To</a>-->
-</div>
-
-<button class="accordion">SKAR</button>
-<div class="panel">
-  <p>4th (0W, 3L) 5 pts (0 PS, 5 DS)</p>
- <!-- <a href="SKAR.html" >Go To</a> -->
-</div>
-
-<button class="accordion">WPI</button>
-<div class="panel">
-  <p>1st (3W, 0L) 140 pts (70 PS, 70 DS)</p>
- <!-- <a href="WPI.html" >Go To</a> -->
-</div>
-
-<!-- JS for animating accordian-->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 
 <div>
