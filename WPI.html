@@ -27,9 +27,73 @@
   <a href="bracket.html">Bracket</a>
   <a href="cform.html">Create Form</a>
 </div>
+<!--
+    <header><center>BLRS</center></header>
+<div class="row">
+  <div class="column">
+  <h2>Capability</h2>
+    <br>
+  <h2>Autonomous Routine</h2>
+    <br>
+  <h2>Strategy</h2>
+    <br>
+  <h2>Capacity</h2>
+    <br>
+  <h2>Descoring Capabilty</h2>
+    </div>
+<div class="column">
+  <h2>Match 1</h2>
+    <br>
+  <h2>Retrieves Orange Cube</h2>
+    <br>
+  <h2>Scoring as many orange cubes as possible</h2>
+    <br>
+  <h2>8 Cubes</h2>
+    <br>
+  <h2>none</h2>
+    </div>
+</div>
+-->
+<!-- Style for columns, style here is only was i could get it to work-->
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <header><center>WPI</center></header>
-    
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<center>
+  <h1>WPI</h1>
+  <img id="WPIrobot" src="WPI.JPG" width="300">
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Capability</h2>
+    <p>Autonomous routine <br><br>Strategy<br><br>Capacity<br><br>Descoring ability</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Match 1</h2>
+    <p>Pick up one orange cube<br><br>pick up as many orange cubes as possible<br><br>8 cubes<br><br>none</p>
+  </div>
+</div>
+      <form>
+         <input type="button" onclick="window.location.href = 'WPIform.html';" value="Add a Form"/>
+      </form>
+</center>
+
 <div>
    <footer>CS3041: Human-Computer Interaction </footer>
 </div>

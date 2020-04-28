@@ -29,6 +29,13 @@ font-family: Futura; Trebuchet MS;
  font-size: 20px;
  padding: 25px 50px;
 }
+h2 {
+ font-family: Futura; Trebuchet MS;
+ font-weight: normal;
+ color: ##000000; 
+ font-size: 16px;
+ padding: 10px 10px;
+}
 
 #content {
  padding:3px;
