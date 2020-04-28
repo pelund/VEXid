@@ -210,3 +210,6 @@ margin-right: auto;
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+h2,h3{
+  display:inline-block;
+}
