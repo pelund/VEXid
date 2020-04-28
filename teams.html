@@ -16,6 +16,60 @@
    
     <header><center>Teams</center></header>
 
+    <button class="accordion">BLRS</button>
+<div class="panel">
+  <h2>2nd</h2>
+  <h3>(2W, 1L)</h3>
+  <h3>135 pts</h3>
+  <h3>(65 PS, 70 DS)</h3>
+  <a href="BLRS.html" class="button">Go To</a>
+</div>
+
+<button class="accordion">NJIT</button>
+<div class="panel">
+  <h2>3rd</h2>
+  <h3>(1W, 2L)</h3>
+  <h3>105 pts</h3>
+  <h3>(65 PS, 40 DS)</h3>
+  <a href="NJIT.html" class="button">Go To</a>
+</div>
+
+<button class="accordion">SKAR</button>
+<div class="panel">
+  <h2>4th</h2>
+  <h3>(0W, 3L)</h3>
+  <h3>5 pts</h3>
+  <h3>(0 PS, 5 DS)</h3>
+  <a href="SKAR.html" class="button">Go To</a>
+</div>
+
+<button class="accordion">WPI</button>
+<div class="panel">
+  <h2>1st</h2>
+  <h3>(3W, 0L)</h3>
+  <h3>140 pts</h3>
+  <h3>(70 PS, 70 DS)</h3>
+  <a href="WPI.html" class="button">Go To</a>
+</div>
+
+<!-- JS for animating accordian-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
 <div class="topnav">
   <a class="active" href="teams.html">Teams</a>
   <a href="matches.html">Matches</a>
