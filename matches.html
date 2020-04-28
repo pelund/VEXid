@@ -23,6 +23,44 @@
   <a href="bracket.html">Bracket</a>
   <a href="cform.html">Create Form</a>
 </div>
+    <button class="accordion">Match 1</button>
+<div class="panel">
+  <p>WPI vs BLRS   98-54</p>
+  <a href="Match1.html" >Go To</a>
+</div>
+
+<button class="accordion">Match 2</button>
+<div class="panel">
+  <p>NJIT vs SKAR   53 - 20</p>
+</div>
+
+<button class="accordion">Match 3</button>
+<div class="panel">
+  <p>WPI vs SKAR   20 - 4</p>
+</div>
+
+<button class="accordion">Match 4</button>
+<div class="panel">
+  <p>BLRS vs NJIT   59 - 50</p>
+</div>
+
+<!-- JS for animating accordian-->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 <div>
    <footer>CS3041: Human-Computer Interaction </footer>
 </div>
