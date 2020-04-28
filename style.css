@@ -193,9 +193,6 @@ margin-right: auto;
   background-color: white;
   display: none;
   overflow: hidden;
-  max-height: 0;
-  overflow: hidden;
-  transition: height 2s;
 }
 
 /* stuff for open/close accordian*/
