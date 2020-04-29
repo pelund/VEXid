@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title> <center> Create Form </center></title>
+  <h1>  <title> <center> Create Form </center></title></h1>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
     <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
@@ -11,10 +11,13 @@
 </head>
 
 <body>
+  
     <!-- HTML5 article tag for content -->
     <div id="content">
    
-    <header><center> Create Form </center></header>
+    <h1><center>Create Form</center></h1>
+<br>
+<br>
 
 <div class="topnav">
   <a href="teams.html">Teams</a>
@@ -23,6 +26,27 @@
   <a href="bracket.html">Bracket</a>
   <a class= "active" href="cform.html">Create Form</a>
 </div>
+<br>
+<br>
+<button onclick="myFunction()">Toggle Help</button>
+
+<div id="help">
+This is where you create forms! Unfortunately, in this version, you cannot cannot actually create forms, but this is how you would create them!
+<br><Br>
+In order to create a form, you must first choose whether it will be a match form or a team form. Team forms are used to take notes on a team's robot, while Match froms are used to plan for a match. For each attribute, or ability, you want to keep note of, fill in a text box.
+<br><br>
+If this system was fully functional, the match form would appear under the form, and the current team from would be replaced with the one created here. However, a database is needed for that.
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("help");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 <form>
   <h2>Is this a team or match form?</h2>
   <input type="radio" id="team" name="team" value="team">

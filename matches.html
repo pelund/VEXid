@@ -14,7 +14,7 @@
     <!-- HTML5 article tag for content -->
     <div id="content">
    
-    <header><center> Matches </center></header>
+    <h1><center> Matches </center></h1>
 
 <div class="topnav">
   <a class="active" href="teams.html">Teams</a>
@@ -23,6 +23,33 @@
   <a href="bracket.html">Bracket</a>
   <a href="cform.html">Create Form</a>
 </div>
+
+<button onclick="myFunction()">Toggle Help</button>
+
+<div id="help">
+ Welcome to the matches screen! Here, you can see upcoming and completed matches!
+ <br><br>
+ Tap or Click on a match to find out more about that match!
+ <br><br>
+ The following information is presented below:
+ <br><br>
+ <ul>
+ <li>Match Time</li>
+ <li>Teams Participating</li>
+ <li>Score (if complete)</li>
+ </ul>
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("help");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <h2><a href="Match1.html">Match 1</a></h2>
 <ul>

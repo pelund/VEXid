@@ -23,13 +23,49 @@
   <a href="bracket.html">Bracket</a>
   <a href="cform.html">Create Form</a>
 </div>
+<button onclick="myFunction()">Toggle Help</button>
 
-
-  <h2><a href="WPI.html" >1st WPI  6 12 50</a></h2>
+<div id="help">
+ <p>This is the rankings screen! Here, you can check what rank your team is in. <br><br> WP is a sum of the follwing results: 
+<ul>
+<li>2 points for a Win</li>
+<li>1 point for a tie</li>
+<li>0 points for a loss</li>
+</ul>
+<br>
+AP is the amount of autnomouses won, times 4
+<br>
+<br>
+SP is the sum of points won by the teams who lost in a match that team was involved in.
+<br>
+<br>
+Teams are ranked by the highest score in the following categories:
+<ul>
+<li>WP</li>
+<li>AP</li>
+<li>SP</li>
+<li>Highest Match Score</li>
+<li>Coin Flip</li>
+</ul>
+</p> 
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("help");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<tt>
+<h2>Rank Team WP AP SP</h2>
+  <h2><a href="WPI.html" >1st WPI 6 12 50</a></h2>
   <h2><a href="BLRS.html">2nd BLRS 4 8  80</a></h2>
   <h2><a href="NJIT.html">3rd NJIT 2 4  30</a></h2>
   <h2><a href="SKAR.html">4th SKAR 0 0  50</a></h2>
-
+</tt>
 <div>
    <footer>CS3041: Human-Computer Interaction </footer>
 </div>
