@@ -34,6 +34,21 @@
   border: 1px solid black;
 }
 </style>
+<button onclick="myFunction()">Toggle Help</button>
+
+<div id="help">
+ Welcome to a sample Match screen! Here you can view who scored what, as well as take Match Notes once a form has been made.
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("help");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 <center>
 <table style="width:100%">
   <tr>
@@ -63,6 +78,7 @@
 </table>
 </center>
 <br>
+<h1>No match notes have been taken for this match</h1>
 <div>
    <footer>CS3041: Human-Computer Interaction </footer>
 </div>
